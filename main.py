@@ -58,7 +58,7 @@ def count_timer(count):
     if count >0:
         global timer
         #window.after is used to count the time in min
-        timer = window.after(10,count_timer,count-1)
+        timer = window.after(1000,count_timer,count-1)
     else:
         start_timer()
         check["text"] = "✔" * (reps//2)
